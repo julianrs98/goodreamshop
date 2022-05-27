@@ -1,0 +1,55 @@
+// Globals
+
+html  {
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+}
+
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+//elements
+
+h1 {
+    color: white;
+}
+
+//flex
+
+.flex {
+    margin: 0 auto;
+    display: flex;
+    &--jc-sb {
+        justify-content: space-between;
+    }
+    &--jc-c {
+        justify-content: center;
+    }
+    &--jc-se {
+        justify-content: space-evenly;
+    }
+    &--ai-c {
+        align-items: center;
+    }
+    &--fd-c {
+        flex-direction: column;
+    }
+}
+
+//container
+
+.container {
+    height: 100%;
+    width: 88%;
+    margin: 0 auto
+}
+
+
+//hidden
+
+.hidden {
+    display: none;
+}

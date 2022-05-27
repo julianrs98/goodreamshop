@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container flex flex--jc-sb flex--ai-c">
+            <a class="header__logo" href="index.html"><h3>GooDreamShop</h3></a>
+            <nav class="header__nav">
+                <ul class="flex header__nav--list">
+                    <li id="user-nav"><img class="header__nav--icon" src="./images/user.png"></li>
+                    <li id="basket-nav"><img class="header__nav--icon" src="./images/basket.png"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="user__box hidden">
+            <div class="user__box--row user__box--row-data flex flex--ai-c flex--jc-se">
+                <div class="user__box--data-picture">
+                    <img src="./images/profile_picture.png" alt="emoji icon in sun glasses">
+                </div>
+                <div class="user__box--data-name">
+                    <h1 id="first-name">John<span id="last-name"> Dreamer</span></h1>
+                </div>
+            </div>
+            <div class="user__box--row user__box--row-credits flex">
+                <h1>Your credits <span id="credits">10000</span>DP</h1>
+            </div>
+            <img id="close" src="./images/close.png">
+        </div>
+        <div class="basket__box">
+            <h1 class="basket__box--title">Basket is empty</h1>
+            <ul class="basket__box--list">
+            </ul>
+            <div class="basket__box--total-row">
+                <h1>Total: <span></span></h1>
+            </div>
+        </div>
+        <div class="container flex flex--jc-sb flex--ai-c">
+            <div class="hero__circle">
+                <h1>Make your dream comes true</h1>
+                <div class="hero__circle--small">
+                    <h2>Show me</h2>
+                    <img src="./images/Emojis/finger_up.png" alt="finger">
+                </div>
+            </div>
+        </div>
+    </section>
+    <article class="dreams">
+        <div class="container">
+                <h2 class="dreams__tittle">Choose the dreams</h2>
+                <div class="dreams__filters">
+                    <div class="dreams__filters--search">
+                        <div >
+                            <label>Search</label>
+                            <input type="text" />
+                        </div>
+                        <div class="dreams--filters--hide">
+                            <label class="vertical-lane">Categories</label>
+                            <select class="dreams__filters--categories">
+                                <option>Adventure</option>
+                                <option>Animals</option>
+                                <option>Travel</option>
+                                <option>Food</option>
+                                <option>Skill</option>
+                                <option>Item</option>
+                            </select> <br>
+                            <label>Coast from</label>
+                            <input class='dreams__filters--coast' type="number" />
+                            <label class="vertical-lane">Sort by</label>
+                            <select class="dreams__filters--sort">
+                                <option>A-Z</option>
+                                <option>Z-A</option>
+                                <option>From lowest coast</option>
+                                <option>From highest coast</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="dreams__filters--button">
+                        <button>Filtres</button>
+                    </div>
+                </div>
+            <div class="dreams__carousel">
+                <div class="dreams__carousel--row flex flex--ai-c flex--jc-sb">
+                    <div class="dreams__carousel--finger">
+                        <img class="finger-left" src="./images/Emojis/left.png">
+                    </div>
+                    <div class="dreams__carousel--clouds">
+                        <div class="dreams__carousel--cloud-side" orderData="1">
+                            <img class="cloud-side" src="./images/Emojis/dreams/beer.png">
+                        </div>
+                        <div class="dreams__carousel--cloud" orderData="2">
+                            <img class="cloud-middle" src="./images/Emojis/dreams/cowboy.png">
+                        </div>
+                        <div class="dreams__carousel--cloud-side" orderData="3">
+                            <img class="cloud-side" src="./images/Emojis/dreams/crown.png">
+                        </div>
+                    </div>
+                    <div class="dreams__carousel--finger right">
+                        <img class="finger-right" src="./images/Emojis/right.png">
+                    </div>
+                </div>
+                <h2 class="dreams__carousel--name">Rodeo</h2>
+                <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odio at tenetur aliquam sequi nobis neque! Minima voluptatem quod sapiente facere accusamus fuga hic debitis! Fugit molestiae suscipit ut neque.</p>
+                <div class="dreams__carousel--box flex flex--jc-se flex--ai-c">
+                    <h1 class="dreams__carousel--price"><span>100</span>DP</h1>
+                    <button id="add-to-busket">add to basket</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <h3>GooDreamShop</h3>
+        <p>Designed and coded by Julian Schmitt-Reichart</p><br>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

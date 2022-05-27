@@ -1,0 +1,29 @@
+.header {
+    @media screen and (min-width: map-get($breakpoints, "tablets")) {
+        height: 76px;
+        li img {
+            width: 35px;
+            }
+        }
+    height: 12vw;
+    background-color: $brandColor;
+    &__logo {
+        color: white;
+        h3 {
+        @include font-size($h3-font-sizes);
+        }
+    }
+}
+
+
+.header__nav {
+    &--list {
+        li:last-child {
+            padding-left: 15px;
+        }
+    }
+    &--icon {
+        width: 5vw;
+        height: auto;
+    }
+}

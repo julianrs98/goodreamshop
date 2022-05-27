@@ -1,0 +1,144 @@
+.hero {
+    max-width: 100%;
+    height: 94vh;
+    background: url('../images/hero.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    &__container {
+        position: relative;
+    }
+    &__circle {
+        @include circleSizes($circles-sizes); //small circle included
+        background: $circles;
+        text-align: center;
+        height: 80vw;
+        width: 80vw;
+        border-radius: 50%;
+        position: relative;
+            > h1 {
+            font-size: 12vw;
+            padding-top: 20%;
+            line-height: 60px;
+            @include font-size($h1-font-sizes);
+        }
+        &--small {
+            background-color: $circles;
+            height: 42vw;
+            width: 42vw;
+            border-radius: inherit;
+            position: absolute;
+            right: 0%;
+            top: 86%;
+            > h2 {
+                font-size: 7vw;
+                text-decoration: underline;
+                padding: 40% 0 8% 0;
+                color: white;
+                @include font-size($h2-font-sizes);
+            }
+            img {
+                width: 30%;
+            }
+        }
+    }
+}
+
+.user__box {
+    width: 35vw;
+    height: 30vh;
+    background-color: white;
+    right: 2%;
+    top: 2%;
+    border-radius: 20px;
+    border: solid 3px $brandColor;
+    position: absolute;
+    z-index: 5;
+    &--row {
+        height: 50%;
+        width: 90%;
+        margin: 0 auto;
+        border-top: 1px solid grey;
+        img {
+            width: 5vw;
+            height: 5vw;
+            margin: auto;
+        }
+        h1 {
+            font-size: 2.5vw;
+            color: $brandColor;
+        }
+        &-credits {
+            h1 {
+                text-align: center;
+                margin: auto;
+            }
+        }
+    }
+    #close {
+        position: absolute;
+        right: 4%;
+        top: 5%
+    }
+}
+
+
+.basket__box {
+    width: 35vw;
+    background-color: white;
+    right: 2%;
+    top: 2%;
+    border-radius: 20px;
+    border: solid 3px $brandColor;
+    position: absolute;
+    &--title {
+        @media screen and (min-width: 850px) {
+            font-size: 3vw;
+        }
+        @media screen and (min-width: map-get($breakpoints, 'desktopsLarge')) {
+            font-size: 2.5vw;
+        }
+        color: #0019FFE3;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 4vw;
+        width: 90%;
+        line-height: 2;
+    }
+    &--list {
+        &-element {
+            display: flex;
+            align-items: center;
+            height: 7vw;
+            width: 90%;
+            margin: 0 auto;
+            &-image {
+                width: 4vw;
+                height: 4vw;
+            }
+            &-name {
+                width: 50%;
+            }
+            &-price {
+                border-right: solid 1px black;
+            }
+            &-bean {
+                width: 2vw;
+                height: 2vw;
+            }
+            * {
+                padding-right: 2.5%;
+                padding-left: 2.5%;
+            }
+        }
+    }
+    .basket__box--total-row {
+        width: 80%;
+        height: 45px;
+        margin: 0 auto;
+        display: none;
+        h1 {
+            color: $brandColor;
+        }
+    }
+}
+

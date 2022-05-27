@@ -1,0 +1,5 @@
+//Globals
+@import 'reset', 'variables', 'base', 'mixins', 'animations';
+
+//Layout
+@import './layout/header', './layout/hero', './layout/article', './layout/footer';
